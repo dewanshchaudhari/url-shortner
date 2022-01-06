@@ -1,15 +1,9 @@
-# 👷 `worker-template` Hello World
+# 🌐 `Url-Shortner-Cloudflare-Workers`
 
-A template for kick starting a Cloudflare worker project.
+A Cloudflare worker project to build url shortening app.
 
-[`index.js`](https://github.com/cloudflare/worker-template/blob/master/index.js) is the content of the Workers script.
+## How to use
 
-#### Wrangler
-
-To generate using [wrangler](https://github.com/cloudflare/wrangler)
-
-```
-wrangler generate projectname https://github.com/cloudflare/worker-template
-```
-
-Further documentation for Wrangler can be found [here](https://developers.cloudflare.com/workers/tooling/wrangler).
+Send a POST request to [https://url-shortner.codewansh.workers.dev](https://url-shortner.codewansh.workers.dev)
+with payload as
+`{ url:https://example.com/, (required) slug:abcxyz, (key for redirection,optional) len:6, (length of key to be generated if slug is not specified,optional) }`
